@@ -1,0 +1,25 @@
+{
+	"deployment": {
+		"name": "stock_scraper",
+		"stack": "node18",
+		"type": "integration",
+		"env_variables": {},
+		"integration_config": [
+			{
+				"service": "ZohoCliq",
+				"handlers": {
+					"bot_handler": "handlers\\bot-handler.js",
+					"command_handler": "handlers\\command-handler.js",
+					"messageaction_handler": "handlers\\message-action-handler.js",
+					"widget_handler": "handlers\\widget-handler.js",
+					"function_handler": "handlers\\function-handler.js",
+					"installation_handler": "handlers\\installation-handler.js",
+					"installation_validator": "handlers\\installation-validator.js"
+				}
+			}
+		]
+	},
+	"execution": {
+		"main": "index.js"
+	}
+}

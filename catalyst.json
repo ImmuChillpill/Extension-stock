@@ -1,0 +1,9 @@
+{
+  "functions": {
+    "targets": [
+      "stock_scraper"
+    ],
+    "ignore": [],
+    "source": "functions"
+  }
+}
